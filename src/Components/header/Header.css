@@ -102,6 +102,9 @@ header{
     .logoImage, .cartShoppingIcon{
         display: none;
     }
+    header{
+        height: 11vh;
+    }
     .maxWidthHeader{
         width: 100vw;
         padding: 0 40px;
