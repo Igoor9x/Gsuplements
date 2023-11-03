@@ -1,0 +1,143 @@
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #009EDF;
+    width: 100vw;
+    height: 15.4vh;
+}
+.maxWidthHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1920px;
+    height: 100%;
+    gap: 5px;
+    color: #fff;
+    padding: 0 30px;
+}
+.logoImage{
+    width: 115px;
+    height: auto;
+}
+.responsiveHeader{
+    display: none;
+}
+.inputSearch{
+    position: relative;
+    display: inline-block;
+    margin: 0 25px;
+}
+.inputSearch input{
+    padding: 15px 10px;
+    width: 45.5vw;
+    height: 6vh;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 11pt;
+    font-weight: 400;
+}
+.inputSearch input::placeholder{
+    font-size: 10.1pt;
+    font-weight: 400;
+    padding: 0 5px;
+}
+.inputSearch span{
+    position: absolute;
+    color: #000;
+    font-size: 20pt;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.userLogin, .contato{
+    display: flex;
+    align-items: center;
+    width: 12.5vw;
+    gap: 13px;
+}
+.userLogin{
+    margin-right: 10px;
+    width: 13.5vw;
+}
+.userLogin span, .userLogin a{
+    cursor: pointer;
+}
+.userLogin h2{
+    font-size: 10pt;
+    line-height: 20px;
+    font-weight: 400;
+}
+.userLogin a{
+    font-weight: 600;
+    cursor: pointer;
+}
+.userLogin a:hover{
+    text-decoration: underline;
+}
+.userLogin span, .contato span{
+    font-size: 17pt;
+}
+ .cartShoppingIcon{
+    font-size: 25pt;
+}
+.contatoText span{
+    display: flex;
+    flex-direction: column;
+    font-size: 11.5pt;
+    line-height: 20px;
+    font-weight: 400;
+}
+.contatoText a{
+    cursor: pointer;
+}
+.cartShoppingIcon{
+    position: relative;
+    cursor: pointer;
+}
+
+@media (max-width: 1023px){
+    .userLogin, .contato, .inputSearch,
+    .logoImage, .cartShoppingIcon{
+        display: none;
+    }
+    .maxWidthHeader{
+        width: 100vw;
+        padding: 0 40px;
+    }
+    .responsiveHeader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24pt;
+    }
+    .responsiveHeader img{
+        width: 150px;
+        height: auto;
+    } 
+    .barsMenu{
+        color: #000;
+    }
+}
+@media (max-width: 340px){
+    header{
+        height: 100%;
+    }
+    .maxWidthHeader{
+        padding:0  10px;
+    }
+    .responsiveHeader{
+        padding: 20px;
+        gap: 5px;
+    }
+    .responsiveHeader img{
+        width: 130px;
+        height: auto;
+
+    }
+    .cartIconMobile{
+        display: none;
+    }
+}

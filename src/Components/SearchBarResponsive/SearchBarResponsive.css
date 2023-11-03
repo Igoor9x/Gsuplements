@@ -1,0 +1,43 @@
+.containerSearchBarResponsive{
+    display: none;
+}
+@media(max-width:1023px){
+    .containerSearchBarResponsive{
+        display: block;
+        width: 100vw;
+        height: 100%;
+        background-color: #04709D;
+    }
+    .maxWidthSearchBarResponsive{
+        max-width: 1920px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 6px;
+    }
+    .maxWidthSearchBarResponsive input{
+        width: 88vw;
+        height: 7vh;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        padding: 2px 8px;
+        font-size: 11pt;
+        font-weight: 500;
+    }
+    .maxWidthSearchBarResponsive input::placeholder{
+        font-size: 10pt;
+        font-weight: 400;
+    }
+    .maxWidthSearchBarResponsive span{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8%;
+        background: #fff;
+        padding: 10px 20px;
+    }
+    
+    
+}
